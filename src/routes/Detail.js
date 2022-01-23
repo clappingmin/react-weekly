@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom'; // 주소에서 id를 받아오기 위해서 사용
+import { Link, useParams } from 'react-router-dom'; // 주소에서 id를 받아오기 위해서 사용
 import styled from 'styled-components';
 
 function Detail() {
@@ -10,6 +10,9 @@ function Detail() {
         <h1>
           <span>{day}요일</span> 평점 남기기
         </h1>
+        <Link to="/">
+          <button>평점 남기기</button>
+        </Link>
       </Container>
     </div>
   );

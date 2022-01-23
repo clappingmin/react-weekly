@@ -1,0 +1,38 @@
+* {
+  box-sizing: content-box;
+}
+
+.container {
+  display: flex;
+  height: 50px;
+  width: 280px;
+  margin-bottom: 10px;
+}
+
+.weekScore {
+  display: flex;
+  align-items: center;
+}
+
+.score {
+  height: 33px;
+  width: 33px;
+  background-color: rgb(252, 236, 96);
+  margin: 5px;
+  border-radius: 50%;
+}
+
+.moveButton {
+  width: 0;
+  height: 0;
+  border-bottom: 20px solid transparent;
+  border-top: 20px solid transparent;
+  border-left: 20px solid skyblue;
+  border-right: 20px solid transparent;
+  margin-left: 10px;
+}
+
+p {
+  font-weight: 600;
+  margin-right: 10px;
+}

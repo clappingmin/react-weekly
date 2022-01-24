@@ -1,0 +1,15 @@
+.score {
+  height: 33px;
+  width: 33px;
+  background-color: rgb(221, 221, 221);
+  margin: 5px;
+  border-radius: 50%;
+}
+
+.changeBg {
+  height: 33px;
+  width: 33px;
+  background-color: rgb(252, 236, 96);
+  margin: 5px;
+  border-radius: 50%;
+}

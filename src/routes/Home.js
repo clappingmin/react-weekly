@@ -9,13 +9,34 @@ function Home() {
     <div>
       <Container>
         <h1>내 일주일은?</h1>
-        <Score day={weekArray[today % 7]} />
-        <Score day={weekArray[(today + 1) % 7]} />
-        <Score day={weekArray[(today + 2) % 7]} />
-        <Score day={weekArray[(today + 3) % 7]} />
-        <Score day={weekArray[(today + 4) % 7]} />
-        <Score day={weekArray[(today + 5) % 7]} />
-        <Score day={weekArray[(today + 6) % 7]} />
+        <Score
+          day={weekArray[today % 7]}
+          rand={Math.floor(Math.random() * 5 + 1)}
+        />
+        <Score
+          day={weekArray[(today + 1) % 7]}
+          rand={Math.floor(Math.random() * 5 + 1)}
+        />
+        <Score
+          day={weekArray[(today + 2) % 7]}
+          rand={Math.floor(Math.random() * 5 + 1)}
+        />
+        <Score
+          day={weekArray[(today + 3) % 7]}
+          rand={Math.floor(Math.random() * 5 + 1)}
+        />
+        <Score
+          day={weekArray[(today + 4) % 7]}
+          rand={Math.floor(Math.random() * 5 + 1)}
+        />
+        <Score
+          day={weekArray[(today + 5) % 7]}
+          rand={Math.floor(Math.random() * 5 + 1)}
+        />
+        <Score
+          day={weekArray[(today + 6) % 7]}
+          rand={Math.floor(Math.random() * 5 + 1)}
+        />
       </Container>
     </div>
   );

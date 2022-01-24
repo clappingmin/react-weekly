@@ -1,5 +1,7 @@
+import { useState } from 'react';
 import { Link, useParams } from 'react-router-dom'; // 주소에서 id를 받아오기 위해서 사용
 import styled from 'styled-components';
+import DetailScore from '../components/DetailScore';
 
 function Detail() {
   const { day } = useParams();
@@ -10,6 +12,7 @@ function Detail() {
         <h1>
           <span>{day}요일</span> 평점 남기기
         </h1>
+        <DetailScore />
         <Link to="/">
           <button>평점 남기기</button>
         </Link>
@@ -41,6 +44,28 @@ const Container = styled.header`
       padding: 3px;
       border-radius: 5px;
     }
+  }
+
+  .score {
+    display: flex;
+
+    div {
+      height: 33px;
+      width: 33px;
+      background-color: rgb(221, 221, 221);
+      margin: 5px;
+      border-radius: 50%;
+    }
+  }
+  button {
+    width: 200px;
+    height: 50px;
+    color: #fff;
+    background-color: blue;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-weight: 600;
   }
 `;
 
